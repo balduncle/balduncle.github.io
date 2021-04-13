@@ -3,7 +3,7 @@ layout: post
 title: First time to BaldUncle?
 subtitle: The official ReadMe of BaldUncle.
 categories: About Uncle
-tags: [About Uncle]
+tags: [About]
 ---
 
 **Hi Children, welcome to my page.**

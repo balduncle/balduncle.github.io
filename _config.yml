@@ -44,7 +44,7 @@ yat:
 # debug: false
 
 # If you don't want transparent header, you can set false
-# header_transparent: true
+header_transparent: false
 
 # Google analytics
 # google_analytics: [Tracking ID]

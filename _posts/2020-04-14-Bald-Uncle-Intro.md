@@ -2,7 +2,7 @@
 layout: post
 title: First time to BaldUncle?
 subtitle: The official ReadMe of BaldUncle.
-categories: About Uncle
+categories: About
 tags: [About]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to BaldUncle
-subtitle: Something I started out of spite in my spare time
+title: First time to BaldUncle?
+subtitle: The official ReadMe of BaldUncle.
 categories: About Uncle
 tags: [About Uncle]
 ---

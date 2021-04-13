@@ -18,6 +18,27 @@ I use TradingView for my analysis, and have a keen interest in developing scalab
 ## Usage of this Website
 I'll be giving all of my Studies/Strategies' source codes here for all of you to literally copy paste on TradingView, if you want to fork it. Else, all input criteria in all of my scripts are editable although they are not open source on TradingView.
 
+## How to use this website
+All studies/strategies posted on my TradingView would be here, with detailed notes, and usage guidelines to ensure you can use it effectively, and make a better iteration of it in the future, to help many more people.
+
+### Posts
+Each post here would have links to the original idea published on TradingView, and key observations that Uncle had while devising it, and using it on different kinds of securities.
+
+### Navigation
+The list on the right is a key for you to navigate to key topics on each study.
+
+### Light/Dark Mode
+There is also a toggle for light/dark mode on the right side.
+
+### Translation
+Since I'm pretty bad at writing in different languages, I could manage to integrate Google Translate for those of you who would want to see this page in your own language. For now, I have a few languages only. Do let me know whichever language you'd want on my mail, and, I'll search on google on how to enable that. That surely should be only a line of code somewhere.
+
+### Tags
+The tags feature here can be used to collate ideas posted across different types of analysis tools, starting from volatility, momentum, averages, and scalping.(Although, I'd get a slap from Aunt again for a wider Stop Loss, rather than Scalp.)
+
+### Categories
+The Categories feature here is to see through all posts here and filter studies/indicators from strategies(either long, short or both), from commentary, from satire and so on.
+
 ## Buy me a Coffee
 No need. Aunt here makes me great Coffee. This entire project would forever be Open-Source and free for all.
 

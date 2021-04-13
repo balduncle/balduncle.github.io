@@ -22,6 +22,7 @@ I'll be giving all of my Studies/Strategies' source codes here for all of you to
 No need. Aunt here makes me great Coffee. This entire project would forever be Open-Source and free for all.
 
 
+<br><br><br>
 
-Best,
+Best,<br>
 BaldUncle

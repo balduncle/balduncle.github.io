@@ -46,7 +46,7 @@ The solution is the simplest indicator script I've written in terms of the numbe
 
 ## 1 |  Trading Range
 
-~~~PineScript
+~~~Pine Script
 A_range = (close[1]+low[1]-high[1])
 ~~~
 
@@ -59,7 +59,9 @@ This trading range, even when plotted just like that, gives quite a unique outpu
 ## 2 |  Relational Computation
 
 ~~~Pine Script
+
 unirange = iff((A_range > A_range[1]),(high+(tr*2)),abs((tr*2)-low))
+
 ~~~
 
 Here is the brain of the computation formula. We define the variable "unirange" as high + twice the true range, or  low as reduced from twice the true range dependent on whether yesterday's "A_range" is lesser or greater than today's "A_range".
@@ -97,7 +99,7 @@ p1, p2, p3, p4, p5 and the fill function should not require any further discussi
 
 
 
-~~~Pine Script
+~~~PineScript
 // © balduncle
 /////////////////////////////////////////////////////////////////////
 //Version Details

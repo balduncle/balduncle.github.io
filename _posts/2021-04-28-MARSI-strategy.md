@@ -8,11 +8,11 @@ tags: [script]
 
 Hi kids. Today, we'll see an indicator script, and the stpry behind. This is quite an interesting one.
 
-# Introduction
+## Introduction
 
 This script is the solution to the need of an improved version of the RSI, which in itself would be good enough to take trades, and gives a better sense of confirmation for trade signals given by any on-chart indicator, adjusted for volatility.
 
-## The RSI
+### The RSI
 
 For well over the better part of a quarter century, everyone in the trading community, unless one was living under a rock, was aware of RSI, and everyone learnt about RSI probably in the first few trading sessions, and how it moved.
 
@@ -20,7 +20,7 @@ The best part about RSI was its' versatility, and it's ability to be adaptable v
 
 The calculation methodology was also in its' favour. Simple and straight forward calculation aided young traders in understanding and using the versatile indicator.
 
-## Beyond RSI
+### Beyond RSI
 
 The RSI lacked in three distinct aspects:
 
@@ -28,11 +28,11 @@ The RSI lacked in three distinct aspects:
 - RSI's calculation is based on delta, and delta being delta, doesn't take into account the trades that happened outside the range of open-close.
 - As RSI doesn't account for volatility, The two - overbought and oversold zones were places form where the rsi would not generally revert, but, would stay and linger for longer periods of time, forcing Technical Analysts and followers of the religion of TA, to resort to finding divergences. Though this isn't bad, this defeats the purpose of having overbought and oversold zones.
 
-## Goals for the System
+### Goals for the System
 
 The goal for the script was simple. Try to fix the places where RSI has lacked. After sometime of forethought, any reader would be able to tell that the way to fix the above is to do these - Fractal - have a moving average, for ranges outside open-close, and for the volatility part, it can be solved using Average True Range.
 
-## Beinaheleidenschaftgegenstand
+### Beinaheleidenschaftgegenstand
 
 ATR is itself an EMA of Tr, so, it would seem that atr is what we need. But, it is far from it.
 
@@ -40,11 +40,11 @@ One reason for it is that the computation of ATR does a dual injustice. It takes
 
 <em>The mere fact that the long term trend is in one direction, and the mini trends were against it, is all easy to identify now that we see a fully formed chart in the past.</em>
 
-# lebenslangerschicksalsschatz
+## lebenslangerschicksalsschatz
 
 The solution is the simplest indicator script I've written in terms of the number of lines of code, and yet works remarkably well. For the sake of simplicity, i'll split into three sections.
 
-## 1 |  Trading Range
+### 1 |  Trading Range
 
 ~~~
 A_range = (close[1]+low[1]-high[1])
@@ -56,7 +56,7 @@ The most commonly asked question here is why reduce high, and add low. The answe
 
 This trading range, even when plotted just like that, gives quite a unique output, siding with the side (up or down) with the lesser relative volatilty. But, that's not why we are here.
 
-## 2 |  Relational Computation
+### 2 |  Relational Computation
 
 ~~~
 unirange = iff((A_range > A_range[1]),(high+(tr*2)),abs((tr*2)-low))
@@ -68,7 +68,7 @@ If your eyebrows aren't raised now, they better be shaved. I was the guy who wro
 
 It is true that True Range may not be the right fit for our purpose of measuring the larger range. But, it is a good computational quant, that is versatile with different markets. The 2 here, is the multiplier of the strategy. In the final script, it will be replaced with input function "mult", with a default value of 2.
 
-## 3 |  Plot Function
+### 3 |  Plot Function
 
 ~~~
 p0 = plot(rsi(ema(unirange,len),len))
@@ -90,7 +90,7 @@ The resulting output is a Modified RSI, that has two levels and 4 zones, all the
 
 p1, p2, p3, p4, p5 and the fill function should not require any further discussion, them being elimentary.
 
-# Complete Code - MARSI
+## Complete Code - MARSI
 
 {: .box-warning}
 **Note:** Tradingview link is given below. Use it to directly apply it on your charts. At present due to the website being in development, the tradingview link isn't available.

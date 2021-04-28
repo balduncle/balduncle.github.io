@@ -3,7 +3,7 @@ layout: post
 title: MARSI - Modified-A-RSI
 subtitle: A substitute for an ageing indicator that has arguably influenced the entire trading comunity.
 categories: indicator
-tags: [relative strength] [RSI] [momentum]
+tags: [RSI, momentum]
 ---
 
 Hi kids. Today, we'll see an indicator script, and the stpry behind. This is quite an interesting one.

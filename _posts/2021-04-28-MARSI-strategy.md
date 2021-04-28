@@ -46,7 +46,7 @@ The solution is the simplest indicator script I've written in terms of the numbe
 
 ## 1 |  Trading Range
 
-~~~Pine Script
+~~~
 A_range = (close[1]+low[1]-high[1])
 ~~~
 
@@ -58,10 +58,8 @@ This trading range, even when plotted just like that, gives quite a unique outpu
 
 ## 2 |  Relational Computation
 
-~~~Pine Script
-
+~~~
 unirange = iff((A_range > A_range[1]),(high+(tr*2)),abs((tr*2)-low))
-
 ~~~
 
 Here is the brain of the computation formula. We define the variable "unirange" as high + twice the true range, or  low as reduced from twice the true range dependent on whether yesterday's "A_range" is lesser or greater than today's "A_range".
@@ -72,7 +70,7 @@ It is true that True Range may not be the right fit for our purpose of measuring
 
 ## 3 |  Plot Function
 
-~~~Pine Script
+~~~
 p0 = plot(rsi(ema(unirange,len),len))
 p1 = plot(70)
 p2 = plot(30)
@@ -99,7 +97,7 @@ p1, p2, p3, p4, p5 and the fill function should not require any further discussi
 
 
 
-~~~PineScript
+~~~
 // © balduncle
 /////////////////////////////////////////////////////////////////////
 //Version Details
@@ -135,7 +133,6 @@ fill(p2, p0, color=color.green)
 ~~~
 
 This can be paired up with a classy on-chart indicator that Uncle loves. That is called Dilwale Dulhaniya Le Jayenge. Let's call it DDLJ.
-
 
 
 Cheers Kids. Trade wise.

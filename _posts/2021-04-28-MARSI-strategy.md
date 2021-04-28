@@ -32,7 +32,7 @@ The RSI lacked in three distinct aspects:
 
 The goal for the script was simple. Try to fix the places where RSI has lacked. After sometime of forethought, any reader would be able to tell that the way to fix the above is to do these - Fractal - have a moving average, for ranges outside open-close, and for the volatility part, it can be solved using Average True Range.
 
-## The Beinaheleidenschaftgegenstand
+## Beinaheleidenschaftgegenstand
 
 ATR is itself an EMA of Tr, so, it would seem that atr is what we need. But, it is far from it.
 
@@ -40,7 +40,7 @@ One reason for it is that the computation of ATR does a dual injustice. It takes
 
 <em>The mere fact that the long term trend is in one direction, and the mini trends were against it, is all easy to identify now that we see a fully formed chart in the past.</em>
 
-# The lebenslangerschicksalsschatz
+# lebenslangerschicksalsschatz
 
 The solution is the simplest indicator script I've written in terms of the number of lines of code, and yet works remarkably well. For the sake of simplicity, i'll split into three sections.
 

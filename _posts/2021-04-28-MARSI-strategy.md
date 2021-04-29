@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MARSI - Modified-A-RSI
+title: BURSI
 subtitle: A substitute for an ageing indicator that has arguably influenced the entire trading comunity.
 categories: indicator
 tags: [RSI, momentum]
@@ -84,13 +84,13 @@ fill(p2, p0, color=color.green)
 
 The plot function is again quite different, and infact goes back to take what we intended to replace, taking an rsi or the ema of the variable "var" over the same length (Defaulting to 20)
 
-This gives us two things, one being the usability of the indicator, as anyone knowing RSI, will be able to use MARSI, and the second being the smoothening of the function "unirange", with a lower kurtosis.
+This gives us two things, one being the usability of the indicator, as anyone knowing RSI, will be able to use BURSI, and the second being the smoothening of the function "unirange", with a lower kurtosis.
 
-The resulting output is a Modified RSI, that has two levels and 4 zones, all the way from overbought, to oversold.
+The resulting output is a changed RSI, that has two levels and 4 zones, all the way from overbought, to oversold.
 
 p1, p2, p3, p4, p5 and the fill function should not require any further discussion, them being elimentary.
 
-## Complete Code - MARSI
+## Complete Code - BURSI
 
 {: .box-warning}
 **Note:** Tradingview link is given below. Use it to directly apply it on your charts. At present due to the website being in development, the tradingview link isn't available.
@@ -106,7 +106,7 @@ p1, p2, p3, p4, p5 and the fill function should not require any further discussi
 /////////////////////////////////////////////////////////////////////
 //input criteria//
 
-study("Modified-A-RSI", overlay=false)
+study("BURSI", overlay=false)
 len = input(title="Length", type=input.integer,defval=20, minval=1)
 mult = input(title="Multiplier", type=input.integer,defval=2, minval=1)
 /////////////////////////////////////////////////////////////////////

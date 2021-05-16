@@ -51,5 +51,6 @@ With all that out of the way, and with you having a good understanding of how th
 
 <br><br><br>
 
-Best,<br>
+Best,
+
 BaldUncle

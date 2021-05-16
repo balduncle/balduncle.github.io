@@ -16,7 +16,7 @@ Well… not exactly. Technical analysis is sold like snake oil, being called the
 But, it definitely isn’t so.
 
 ### Science and the Universe
-Science says, that all matter in the universe is made of 12 types of particles, and even if we include the energy particles, we come to a paltry 17 which we have theorised and validated till date. And, if one can predict or know, the position and direction of all these 17 particles at all times, theoretically, one would be able to predict what could happen in the future, as everything is the sum result of these 17 particles. **insert Krish future scene**
+Science says, that all matter in the universe is made of 12 types of particles, and even if we include the energy particles, we come to a paltry 17 which we have theorised and validated till date. And, if one can predict or know, the position and direction of all these 17 particles at all times, theoretically, one would be able to predict what could happen in the future, as everything is the sum result of these 17 particles.
 
 ### Astrology & Brain
 But, on a more realistic level, the closest humans ever came to this, was 5000 years ago, when we invented astrology. Now, I’m not stickler… but, if some planet’s relative position, light hours away is going to dictate if you’d get pregnant in the current year, I call it Bullshit.

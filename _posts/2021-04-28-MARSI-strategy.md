@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BURSI
+title: Modified Momentum Indicator - MMI
 subtitle: A substitute for an ageing indicator that has arguably influenced the entire trading comunity.
 categories: indicator
 tags: [RSI, momentum]
@@ -84,16 +84,34 @@ fill(p2, p0, color=color.green)
 
 The plot function is again quite different, and infact goes back to take what we intended to replace, taking an rsi or the ema of the variable "var" over the same length (Defaulting to 20)
 
-This gives us two things, one being the usability of the indicator, as anyone knowing RSI, will be able to use BURSI, and the second being the smoothening of the function "unirange", with a lower kurtosis.
+This gives us two things, one being the usability of the indicator, as anyone knowing RSI, will be able to use MMI, and the second being the smoothening of the function "unirange", with a lower kurtosis.
 
 The resulting output is a changed RSI, that has two levels and 4 zones, all the way from overbought, to oversold.
 
 p1, p2, p3, p4, p5 and the fill function should not require any further discussion, them being elimentary.
+In addition, I went ahead and added a function of delta of the MMI, and the acceleration of MMI to get more meaningful insight.
 
-## Complete Code - BURSI
+## Indicator on TV
+This looks like this - 
+<!-- TradingView Chart BEGIN -->
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+var tradingview_embed_options = {};
+tradingview_embed_options.width = '720';
+tradingview_embed_options.height = '480';
+tradingview_embed_options.chart = 'jNajT4Ub';
+new TradingView.chart(tradingview_embed_options);
+</script>
+<p><a href="https://www.tradingview.com/script/jNajT4Ub-Modified-Momentum-Index-MMI/">Modified Momentum Index - MMI</a> by <a href="https://www.tradingview.com/u/BaldUncle/">BaldUncle</a> on <a href="https://www.tradingview.com/">TradingView.com</a></p>
+<!-- TradingView Chart END -->
+
+[Click here][https://www.tradingview.com/script/jNajT4Ub-Modified-Momentum-Index-MMI/] and add to fav to use MMI on your own charts!
+
+
+## Complete Code - MMI
 
 {: .box-warning}
-**Note:** Tradingview link is given below. Use it to directly apply it on your charts. At present due to the website being in development, the tradingview link isn't available.
+**Note:** Tradingview link is given above. Use it to directly apply it on your charts. The below code is given for understanding alone.
 
 
 
@@ -104,35 +122,39 @@ p1, p2, p3, p4, p5 and the fill function should not require any further discussi
 //@version=4
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
+
 //input criteria//
 
-study("BURSI", overlay=false)
+study("Modified Momentum Index - MMI", overlay=false)
 len = input(title="Length", type=input.integer,defval=20, minval=1)
-mult = input(title="Multiplier", type=input.integer,defval=2, minval=1)
-/////////////////////////////////////////////////////////////////////
-//Calculation Methodology//
+//res = input("Resolution of Shading",type=input.resolution ) [res is depreciated in the current version]
 
+//range & Calculation//
 A_range = (close[1]+low[1]-high[1])
-unirange = iff((A_range > A_range[1]),(high+(tr*mult)),abs((tr*mult)-low))
-/////////////////////////////////////////////////////////////////////
-//Plot Function//
+dayb4 = (close[2]+low[2]-high[2])
+a = iff((A_range > A_range[1]),(high+(tr*2)),abs((tr*2)-low))
+MMI = (rsi(ema(a,len),len))
 
-p0 = plot(rsi(ema(unirange,len),len))
-p1 = plot(70)
-p2 = plot(30)
-p3 = plot(50)
-p4 = plot(100)
-p5 = plot(0)
-fill(p1,p4,color=color.red)
-fill(p1, p2, color=color.yellow)
-fill(p2, p0, color=color.green)
+//plot functions//
+p0 = plot(rsi(ema(a,len),len), title="MMI")
+p1 = plot(70, title = "70")
+p2 = plot(30, title="30")
+p3 = plot(50, title="50")
+fill(p1,p2,color=color.white)
+
+//Delta and Acceleration Plots//
+deltaMMI = MMI-MMI[1]
+accMMI = (deltaMMI/MMI[1])*100
+plot(accMMI, title = "Acceleration of MMI", color=color.orange, style=plot.style_area)
+plot(deltaMMI, title = "Change in MMI", style=plot.style_area)
+
 /////////////////////////////////////////////////////////////////////
 //Feel free to use this, just keep uncle in credit.//
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 ~~~
 
-This can be paired up with a classy on-chart indicator that Uncle loves. That is called Dilwale Dulhaniya Le Jayenge. Let's call it DDLJ.
+This can be paired up with a classy on-chart indicator that Uncle loves. That is called Baka Mitai. Let's call it BM.
 
 
 Cheers Kids. Trade wise.

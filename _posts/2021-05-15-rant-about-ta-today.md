@@ -6,7 +6,7 @@ categories: Rant
 tags: [Opinion]
 ---
 
-**Hi. I wanted to get this out.**
+**Hi! I wanted to get this out.**
 
 
 ## The Brain and TA

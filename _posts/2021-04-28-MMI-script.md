@@ -105,7 +105,7 @@ new TradingView.chart(tradingview_embed_options);
 <p><a href="https://www.tradingview.com/script/jNajT4Ub-Modified-Momentum-Index-MMI/">Modified Momentum Index - MMI</a> by <a href="https://www.tradingview.com/u/BaldUncle/">BaldUncle</a> on <a href="https://www.tradingview.com/">TradingView.com</a></p>
 <!-- TradingView Chart END -->
 
-[Click here][https://www.tradingview.com/script/jNajT4Ub-Modified-Momentum-Index-MMI/] and add to fav to use MMI on your own charts!
+Click on the above line and add this to your fav to use on your charts.
 
 
 ## Complete Code - MMI

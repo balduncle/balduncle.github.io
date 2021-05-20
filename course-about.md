@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is the course Program?
-hidden: true
+hidden: false
 subtitle: What, why, how and when
 categories: 
 tags: []

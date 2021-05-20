@@ -8,7 +8,7 @@ tags: []
 ---
 
 {: .box-note}
-**Note:** Before you scroll further, ask yourself this - Do you want to get rich quick? Scroll down only if your answer is no.**
+**Note:** **Before you scroll further, ask yourself this - Do you want to get rich quick? Scroll down only if your answer is no.**
 
 ## Who Am I?
 

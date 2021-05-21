@@ -10,6 +10,8 @@ tags: []
 {: .box-note}
 **Note:** **Before you scroll further, ask yourself this - Do you want to get rich quick? Scroll down only if your answer is no.**
 
+*And, this page is best viewed on a desktop although mobile rendering is pretty slick.*
+
 ## 1 | Who Am I?
 
 ### Who am I literally?
@@ -95,7 +97,7 @@ _When it comes to trading, the day you stop learning is the day before your long
 
 Get in touch with me through [Instagram](instagram.com/balduncle "Balduncle"), or drop in a mail to balduncle69@gmail.com
 
-## Things you need to know
+## 5 | Things you need to know
 ### Course Details
 
 The course will try to be decent, but, would lie on borderline explicit because there is just too much stuff that is wrong with the world that we live in.
@@ -109,3 +111,4 @@ Discounts are not given for the same reason promotions aren't done. You either t
 
 Best,<br>
 BaldUncle
+

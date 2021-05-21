@@ -56,7 +56,7 @@ First thing, the timing is your call. Analysis is pretty much the same, with lim
 
 ### Why this program?
 
-There are a Thousand quinquagintaquadringentillion (yes, that's a real word) programs/trading courses out there in the market. And, as much as I'd like to call this one to be different from the other "trading programs", I'm afraid I can't do that.
+There are a Thousand quinquagintaquadringentillion (*I know you skipped the word you cheeky boi*) programs/trading courses out there in the market. And, as much as I'd like to call this one to be different from the other "trading programs", I'm afraid I can't do that.
 As I see it, there are ponzi scheme-get-rich-quick-shit-courses that are no better than a guy pulling tarot cards on the side of the street, and real life programs that are built on a pragmatic level.
 
 ### How is this any different irl though?

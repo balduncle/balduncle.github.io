@@ -91,6 +91,8 @@ So, as far as pirated copies go, you're on your own. I don't track them. There m
 
 Around every weekend, I sit down, to look at charts, and try to come up with a new meaningful input/indicator that can make our lives easier. All those would be on this website.
 
+In addition, whenever you have any doubts, you can reach me at my number/mail/gram to have a call during the weekends to clear stuff up.
+
 _When it comes to trading, the day you stop learning is the day before your longest losing streak,_
 
 ### Want the course?
